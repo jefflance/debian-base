@@ -28,7 +28,7 @@ RUN apt-get update \
        nano
 
 # configure system
-COPY id_dsa.pub /tmp/id_dsa.pub
+#COPY id_dsa.pub /tmp/id_dsa.pub
 COPY configure.sh /tmp/configure.sh
 RUN /bin/bash /tmp/configure.sh && rm /tmp/configure.sh && rm /tmp/id_dsa.pub
 COPY entrypoint.sh /entrypoint.sh
