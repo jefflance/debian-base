@@ -9,7 +9,7 @@ A Debian base image. Built on my own stock Debian minimal image from mkimage.sh 
 - runit : to manage services under /etc/service/ dir
 - openssh-server
 
-see [Dockerfile](https://hub.docker.com/r/jefflance/debian-base/~/dockerfile/) for details.
+see [Dockerfile](https://github.com/jefflance/debian-base/blob/master/Dockerfile) for details.
 
 
 ### SSH connection as root
