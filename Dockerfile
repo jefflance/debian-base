@@ -14,7 +14,7 @@ MAINTAINER Jeff LANCE <jeff.lance@mala.fr>
 ENV DEBIAN_FRONTEND noninteractive
 
 
-# update system packages and install some stuff
+# update system packages, install some stuff and clean package cache
 RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get dist-upgrade -y \
@@ -25,7 +25,8 @@ RUN apt-get update \
        openssh-server \
        sudo \
        curl \
-       nano
+       nano \
+    && apt-get clean
 
 # configure system
 #COPY id_dsa.pub /tmp/id_dsa.pub
